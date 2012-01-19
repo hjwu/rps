@@ -1,0 +1,27 @@
+html{text-align:center;}
+body{position:relative;margin:0 auto;padding-top:100px;width:900px; background-color:black; height:700px; }
+div#title{color:white;font-size:30pt;}
+div#trow{position:relative;margin:0 auto;width:100%;}
+div#brow{position:relative;margin-top:20px;width:100%;}
+div#Game_record{float:left;position:relative;margin-left:30px;padding-top:30px;width:400px;height:70px;font-size:24pt;text-align:center;background-image:url("icon/recordtxt.png");}
+div#choose{float:right;position:relative;margin-right:30px;width:350px;}
+div#footer{clear:both; margin-top:20px; position:relative;text-align:center;}
+div#copyright{color:white;font-size:12pt;}
+.iphone-slider {clear:both; width: 280px; height: 46px; position: relative; margin-top:150px; margin-left:310px;}
+.iphone-slider input { -webkit-appearance: none; width: 100%; background: #ddd; padding: 3px; border: 1px solid #525252;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #000000), color-stop(1, #222222));
+}
+
+.iphone-slider input::-webkit-slider-thumb { -webkit-appearance: none; z-index: 100; position: relative; width: 68px; height: 44px; -webkit-border-radius: 10px; border-radius: 10px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAYCAYAAAB0kZQKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAASJJREFUeNpi7OnpYaAC0AXiF0D8mhzNTAzUASBHnAdim4F0BAhIA/EBIC4aSEeAADMQ9wLxRiDmHyhHwIAfNHqMiXZEcXExGJMCiNCjCMTHgDiTkFmM////p4rXe3t78Rm0DIjTgfgLNkkWoGZQij7MQFsQBY2aICC+Rq80gQ2oA/EZIE4YSEeAACcQzwfimVD2gDgCBtKgiVZlIB0BAgbQbBwykI5A5I4BtPsaNLfcHKiQWADEJiAHDERIfAfiLKgjBiQ67kCD/zK2NAFqjMyi0AJQVnPCI78GiBNxFttQF6ZToVjG5ohfoLoOiKcMVO54BA3+swPVntgKxIbEOIAWjvgLxJVA7APE7waisHoKxBFAfGSgSszL0MLnBTmaAQIMAKg/OsrT7JG8AAAAAElFTkSuQmCC'),
+    -webkit-gradient(  linear,left top, left bottom, color-stop(0, #fefefe), color-stop(0.49, #dddddd), color-stop(0.51, #d1d1d1), color-stop(1, #a1a1a1) );
+    background-repeat: no-repeat;  background-position: 50%; }
+
+.iphone-slider span { position: absolute; z-index: 99; top: 30%; left: 37%; font-family: "Helvetica Neue", Helvetica, sans; font-size: 24px; color: white; cursor: default;
+    -webkit-user-select: none; -webkit-mask-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(0,0,0,0.3)), color-stop(0.45, rgba(0,0,0,0.3)), color-stop(0.5, rgba(0,0,0,1)), color-stop(0.55, rgba(0,0,0,0.3)),
+        color-stop(1, rgba(0,0,0,0.3)));-webkit-mask-size: 1000px; -webkit-mask-repeat: no-repeat; -webkit-animation-timing-function: ease-in-out; -webkit-animation: text-spotlight 4s infinite; }
+
+@-webkit-keyframes text-spotlight {0% {-webkit-mask-position: -800px;}100% {-webkit-mask-position: 0px;}}
+

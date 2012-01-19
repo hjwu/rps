@@ -1,0 +1,46 @@
+<! DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+	<title>Rock Paper Scissor</title>
+	<script type="text/javascript" src="rock-paper-scissor.js"></script>
+	<link rel="stylesheet" href="rock-paper-scissor.css" type="text/css"/>
+	<link rel="shortcut icon" type="image/png" href="icon/rps.png" />			
+</head>
+<body onLoad="record()">
+<div id="title">Rock Paper Scissor</div>
+<div id="trow"><img id="PC_result" src="icon/pc.png"><img id="game_result" src="icon/vs.png"><img id="user_result" src="icon/user.png"></div>
+<div id="brow">	
+	<div id="Game_record"><span id="recordtxt"></span></div>
+	<div id="choose">
+	<input id="scissor" type="image" src="icon/srScissor.png" disabled="disabled" onclick="results(0)"> 
+	<input id="rock" type="image" src="icon/srRock.png" onclick="results(1)" disabled="disabled"> 
+	<input id="paper" type="image" src="icon/srPaper.png" onclick="results(2)" disabled="disabled">
+	</div>
+</div>
+<div class="iphone-slider"><input id="ipl" type="range" value="0"></input> <span id="slideText">slide to unlock</span></div>
+<div id="footer"><img src="http://jsygamela.com/logo/footer.png"></div>
+<div id="copyright">Copyright © 2011 Jhong Sheng Yuan Technology Co., Ltd. All rights reserved.</div>
+<script>  
+(function(){
+  var slider, sliderInput, sliderButton, sliderText, sliderTimeout, sliderOnchange, unlockCheck;
+  
+  slider = document.querySelector('.iphone-slider');
+  sliderInput = slider.querySelector('input');
+  sliderText = slider.querySelector('span');
+  
+  unlockCheck = function() {
+    if(sliderInput.value == 100) { sliderText.innerHTML = ''; sliderInput.value = 0; sliderText.style.opacity = 1; setInterval(showImage,100); 
+    	document.getElementById("ipl").style.display = "none"; 
+    	document.getElementById("scissor").removeAttribute("disabled"); document.getElementById("rock").removeAttribute("disabled"); document.getElementById("paper").removeAttribute("disabled");}
+    else { setTimeout(function(){ sliderInput.value = 0; sliderText.style.opacity = 1; }, 1000); }
+  };
+  
+  sliderOnchange = function() { sliderText.style.opacity = ((100 - sliderInput.value) / 200); clearTimeout(sliderTimeout); sliderTimeout = setTimeout(unlockCheck, 300); }
+  
+  slider.onchange = sliderOnchange;
+})();
+ 
+</script> 
+</body>
+</html>
